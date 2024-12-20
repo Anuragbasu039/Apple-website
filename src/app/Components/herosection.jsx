@@ -28,19 +28,18 @@ export default function Home() {
         <div
             className="mt-20 min-h-screen flex items-center justify-center"
             style={{
-                background: `
-                    linear-gradient(to top, rgba(222, 118, 196), transparent),
-                    url('/background-image.jpg') center / cover no-repeat
-                `,
+                background: `linear-gradient(to top, rgba(222, 118, 196), transparent), url('/background-image.jpg') center / cover no-repeat`,
             }}
         >
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
                 <div className="mt-20">
                     <div className="text-sm uppercase text-purple-600 font-semibold">The Ultimate Traffic Analysis Platform</div>
-                    <h1 className="text-5xl font-bold text-gray-900 mt-2">
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
                         Optimize Your Business with{' '}<br />
-                        <span className="bg-purple-600 text-white">Real-Time Traffic Insights</span>
+                        <span className="bg-purple-600 text-white text-3xl md:text-5xl">
+                            Real-Time Traffic Insights
+                        </span>
                     </h1>
                     <p className="mt-4 text-black-600 text-lg leading-relaxed">
                         Gain deep insights into your website’s performance with real-time analytics and detailed <br /> traffic reports.
