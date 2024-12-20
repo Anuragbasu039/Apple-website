@@ -28,7 +28,7 @@ export default function Home() {
         <div className="min-h-screen bg-gradient-to-b from-purple-200 to-white flex items-center justify-center bg-[radial-gradient(circle_at_bottom,_rgba(128,90,213,0.3),_transparent)]">
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
-                <div className="mb-10">
+                <div className="mt-20">
                     <div className="text-sm uppercase text-purple-600 font-semibold">The Ultimate Traffic Analysis Platform</div>
                     <h1 className="text-5xl font-bold text-gray-900 mt-2">
                         Optimize Your Business with{' '}<br />
