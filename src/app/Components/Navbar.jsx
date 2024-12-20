@@ -67,8 +67,8 @@ export default function NavBar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-white/80 backdrop-blur-lg shadow-md md:hidden">
-                    <div className="flex flex-col space-y-4 py-4 px-6 text-gray-700">
+                <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+                    <div className="flex flex-col  space-y-4 py-4 px-6 text-gray-700">
                         <a
                             href="#features"
                             className="hover:text-purple-600 transition-colors"
