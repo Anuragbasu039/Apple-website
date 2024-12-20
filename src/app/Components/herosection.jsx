@@ -25,7 +25,15 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-purple-200 to-white flex items-center justify-center bg-[radial-gradient(circle_at_bottom,_rgba(128,90,213,0.3),_transparent)]">
+        <div
+            className="mt-20 min-h-screen flex items-center justify-center"
+            style={{
+                background: `
+                    linear-gradient(to top, rgba(222, 118, 196), transparent),
+                    url('/background-image.jpg') center / cover no-repeat
+                `,
+            }}
+        >
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
                 <div className="mt-20">
@@ -52,7 +60,7 @@ export default function Home() {
                 {/* Image Mockup Section */}
                 <div className="relative mt-12">
                     <div
-                        className="bg-white rounded-3xl shadow-[0px_25px_50px_-12px_rgba(148,163,184,0.4)] overflow-hidden"
+                        className="bg-white rounded-3xl overflow-hidden glass-effect"
                         style={{
                             transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
                             transition: 'transform 0.2s ease-out',

@@ -12,7 +12,7 @@ export default function NavBar() {
                 <div className="w-6 h-6 bg-purple-500 rounded-full flex justify-center items-center">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <span className="text-lg font-bold">DataFlow</span>
+                <span className="text-lg font-bold text-black">DataFlow</span>
             </div>
 
             {/* Navigation Links for Desktop */}
