@@ -26,18 +26,18 @@ export default function Home() {
 
     return (
         <div
-            className="mt-20 min-h-screen flex items-center justify-center"
+            className=" min-h-screen flex items-center justify-center"
             style={{
-                background: `linear-gradient(to top, rgba(222, 118, 196), transparent), url('/background-image.jpg') center / cover no-repeat`,
+                background: `radial-gradient(circle,rgba(170, 237, 255, 0.8), transparent), url('/background-image.jpg') center / cover no-repeat`,
             }}
         >
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
                 <div className="mt-20">
-                    <div className="text-sm uppercase text-purple-600 font-semibold">The Ultimate Traffic Analysis Platform</div>
+                    <div className="text-sm uppercase text-[#22d3ee] font-semibold">The Ultimate Traffic Analysis Platform</div>
                     <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
                         Optimize Your Business with{' '}<br />
-                        <span className="bg-purple-600 text-white text-3xl md:text-5xl">
+                        <span className="bg-[#22d3ee] text-white text-3xl md:text-5xl">
                             Real-Time Traffic Insights
                         </span>
                     </h1>
@@ -48,7 +48,7 @@ export default function Home() {
 
                 {/* Buttons */}
                 <div className="mt-8 flex justify-center gap-4">
-                    <button className="bg-purple-600 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-purple-700 transition">
+                    <button className="bg-[#22d3ee] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-[#22d3ee] transition">
                         Get Started
                     </button>
                     <button className="bg-gray-200 text-gray-700 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-300 transition">
@@ -59,7 +59,7 @@ export default function Home() {
                 {/* Image Mockup Section */}
                 <div className="relative mt-12">
                     <div
-                        className="bg-white rounded-3xl overflow-hidden glass-effect"
+                        className=" rounded-3xl overflow-hidden glass-effect"
                         style={{
                             transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
                             transition: 'transform 0.2s ease-out',
@@ -68,10 +68,10 @@ export default function Home() {
                         onMouseLeave={handleMouseLeave}
                     >
                         <Image
-                            src="/heropic1.webp" // Place the image in the `public` folder
+                            src="/iphone 16.png" // Place the image in the `public` folder
                             alt="Dashboard Preview"
-                            width={800} // Set width and height for better optimization
-                            height={500}
+                            width={600} // Set width and height for better optimization
+                            height={600}
                         />
                     </div>
                 </div>
