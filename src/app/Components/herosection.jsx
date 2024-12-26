@@ -34,21 +34,23 @@ export default function Home() {
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
                 <div className="mt-20">
-                    <div className="text-sm uppercase text-[#22d3ee] font-semibold">The Ultimate Traffic Analysis Platform</div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">
-                        Optimize Your Business with{' '}<br />
-                        <span className="bg-[#22d3ee] text-white text-3xl md:text-5xl">
-                            Real-Time Traffic Insights
-                        </span>
-                    </h1>
-                    <p className="mt-4 text-black-600 text-lg leading-relaxed">
-                        Gain deep insights into your website’s performance with real-time analytics and detailed <br /> traffic reports.
-                    </p>
+                    {/*<div className="text-sm uppercase text-[#22d3ee] font-semibold">The Ultimate Traffic Analysis Platform</div>*/}
+                    {/*<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10">*/}
+                    {/*    Iphone 16{' '}<br/>*/}
+                    {/*</h1>*/}
+                    <span
+                        className="bg-gradient-to-r from-[#0090f7] via-[#ba62fc] to-[#f2416b] text-white text-3xl md:text-5xl font-bold">
+    Build For Apple Intelligents
+</span>
+                    {/*<p className="mt-4 text-black-600 text-lg leading-relaxed">*/}
+                    {/*    Gain deep insights into your website’s performance with real-time analytics and detailed <br /> traffic reports.*/}
+                    {/*</p>*/}
                 </div>
 
                 {/* Buttons */}
                 <div className="mt-8 flex justify-center gap-4">
-                    <button className="bg-[#22d3ee] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-[#22d3ee] transition">
+                    <button
+                        className="bg-[#22d3ee] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-[#22d3ee] transition">
                         Get Started
                     </button>
                     <button className="bg-gray-200 text-gray-700 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-300 transition">
