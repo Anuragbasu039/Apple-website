@@ -26,31 +26,26 @@ export default function Home() {
 
     return (
         <div
-            className=" min-h-screen flex items-center justify-center"
+            className="min-h-screen flex items-center justify-center"
             style={{
-                background: `radial-gradient(circle,rgba(170, 237, 255, 0.8), transparent), url('/background-image.jpg') center / cover no-repeat`,
+                background: `radial-gradient(rgba(255, 255, 255, 0), transparent), center / cover no-repeat`,
             }}
         >
             <div className="text-center max-w-4xl mx-auto px-6 py-12">
                 {/* Header Section */}
                 <div className="mt-20">
-                    {/*<div className="text-sm uppercase text-[#22d3ee] font-semibold">The Ultimate Traffic Analysis Platform</div>*/}
-                    {/*<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10">*/}
-                    {/*    Iphone 16{' '}<br/>*/}
-                    {/*</h1>*/}
-                    <span
-                        className="bg-gradient-to-r from-[#0090f7] via-[#ba62fc] to-[#f2416b] text-white text-3xl md:text-5xl font-bold">
-    Build For Apple Intelligents
-</span>
-                    {/*<p className="mt-4 text-black-600 text-lg leading-relaxed">*/}
-                    {/*    Gain deep insights into your website’s performance with real-time analytics and detailed <br /> traffic reports.*/}
-                    {/*</p>*/}
+                    <Image
+                        src="/appleheadingtag.png" // Replace with the correct image path
+                        alt="Apple Intelligents Logo"
+                        width={1000}
+                        height={500}
+                    />
                 </div>
 
                 {/* Buttons */}
                 <div className="mt-8 flex justify-center gap-4">
                     <button
-                        className="bg-[#22d3ee] text-white py-3 px-8 rounded-lg shadow-lg hover:bg-[#22d3ee] transition">
+                        className="bg-black text-white py-3 px-8 rounded-lg shadow-lg hover:bg-white hover:text-black transition border white">
                         Get Started
                     </button>
                     <button className="bg-gray-200 text-gray-700 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-300 transition">
@@ -58,10 +53,10 @@ export default function Home() {
                     </button>
                 </div>
 
-                {/* Image Mockup Section */}
-                <div className="relative mt-12">
+                {/* Video Mockup Section */}
+                <div className="relative mt-10">
                     <div
-                        className=" rounded-3xl overflow-hidden glass-effect"
+                        className="rounded-3xl overflow-hidden glass-effect relative border-glow"
                         style={{
                             transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
                             transition: 'transform 0.2s ease-out',
@@ -69,14 +64,31 @@ export default function Home() {
                         onMouseMove={handleMouseMove}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Image
-                            src="/iphone 16.png" // Place the image in the `public` folder
-                            alt="Dashboard Preview"
-                            width={600} // Set width and height for better optimization
-                            height={600}
-                        />
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            className="w-full h-full rounded-2xl"
+                            onEnded={(e) => e.target.play()} // Restart the video if it stops
+                        >
+                            <source src="https://www.apple.com/105/media/us/iphone/family/2024/cf19f185-dd7e-4350-97ff-e44860713b54/anim/welcome/large.mp4" type="video/mp4" />
+                        </video>
                     </div>
                 </div>
+
+                <style jsx>{`
+                    @keyframes glow-border {
+                        0% { box-shadow: 0 0 10px #22d3ee; }
+                        50% { box-shadow: 0 0 20px #eb34cf; }
+                        75% { box-shadow: 0 0 10px #eb3465; }
+                        100% { box-shadow: 0 0 10px #c9b906; }
+                    }
+
+                    .border-glow {
+                        border-radius: 16px;
+                        animation: glow-border 2s infinite alternate;
+                    }
+                `}</style>
             </div>
         </div>
     );
