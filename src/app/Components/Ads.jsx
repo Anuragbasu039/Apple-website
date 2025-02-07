@@ -18,7 +18,7 @@ export default function Adsection() {
                     {/* Sales Statistic Card */}
                     <div className=" ">
                         <Image
-                            src="/alliphone.png" // Place the image in the `public` folder
+                            src="/a1.jpg" // Place the image in the `public` folder
                             alt="Dashboard Preview"
                             width={1000} // Set width and height for better optimization
                             height={1000}

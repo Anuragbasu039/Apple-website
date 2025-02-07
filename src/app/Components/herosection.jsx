@@ -68,7 +68,7 @@ export default function Home() {
                             autoPlay
                             loop
                             muted
-                            className="w-full h-full rounded-2xl"
+                            className="w-full h-full rounded-2xl "
                             onEnded={(e) => e.target.play()} // Restart the video if it stops
                         >
                             <source src="https://www.apple.com/105/media/us/iphone/family/2024/cf19f185-dd7e-4350-97ff-e44860713b54/anim/welcome/large.mp4" type="video/mp4" />

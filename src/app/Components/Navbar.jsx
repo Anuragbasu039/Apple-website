@@ -45,7 +45,7 @@ export default function NavBar() {
 
             {/* Buy Template Button for Desktop */}
             <div className="hidden md:block">
-                <button className="bg-[#fff] text-black py-2 px-4 rounded-lg hover:bg-black hover:text-white transition">
+                <button className="bg-[#fff] text-black py-2 px-4 rounded-lg hover:bg-black hover:text-white border white transition">
                     Buy Now
                 </button>
             </div>
