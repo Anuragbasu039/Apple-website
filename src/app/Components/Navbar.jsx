@@ -36,7 +36,7 @@ export default function NavBar() {
 
             {/* Navigation Links for Desktop */}
             <div className="hidden md:flex space-x-6 text-white">
-                {["Features", "Benefits", "Solutions", "Testimonials", "Pricing", "FAQ"].map((item) => (
+                {["MAC", "Ipad", "Iphone", "Watch", "AirPods"].map((item) => (
                     <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-[#22d3ee] transition-colors">
                         {item}
                     </a>
@@ -74,7 +74,7 @@ export default function NavBar() {
                                 {item}
                             </a>
                         ))}
-                        <button className="bg-[#22d3ee] text-white py-2 px-4 rounded-lg hover:bg-[#1e9db5] transition">
+                        <button className="bg-black border white text-white py-2 px-4 rounded-lg hover:bg-white hover:text black  transition">
                             Buy Now
                         </button>
                     </div>
