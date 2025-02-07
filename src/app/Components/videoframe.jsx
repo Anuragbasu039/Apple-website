@@ -8,7 +8,7 @@ export default function VideoFrame() {
 
             {/* Image */}
             <Image
-                src="/buildai.png" // Replace with your actual image source
+                src="/appleheadingtag.png" // Replace with your actual image source
                 alt="Mac Logo"
                 width={800}
                 height={800}
