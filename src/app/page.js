@@ -6,6 +6,7 @@ import ProductSlider from "@/app/Components/ProductSlider";
 import VideoFrame from "@/app/Components/macvideo";
 import VideoFrameMacOpen from "@/app/Components/videoframe";
 import Imageslider from "@/app/Components/imageslider"
+import Footer from "@/app/Components/Footer";
 export default function Home() {
   return (
     <div >
@@ -16,6 +17,7 @@ export default function Home() {
       <VideoFrame />
       <VideoFrameMacOpen />
       <Imageslider />
+      <Footer />
     </div>
   );
 }
