@@ -101,8 +101,7 @@ export default function NavBar() {
                                 </span>
                             </a>
                         ))}
-                        <button className="bg-gradient-to-r from-blue-400 to-cyan-400 text-white py-2 px-4 rounded-lg 
-                            hover:from-blue-500 hover:to-cyan-500 transition-all duration-300">
+                        <button className="text-white py-2 px-4 rounded-lg bg black border border-white hover:bg-white hover:text-black transition-all duration-300">
                             Buy Now
                         </button>
                     </div>
