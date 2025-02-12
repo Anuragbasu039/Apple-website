@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import HeroSection from "@/app/Components/herosection";
-import IphoneSilder from "@/app/Components/iphone silder";
-import Ad from "@/app/Components/Ads";
-import ProductSlider from "@/app/Components/ProductSlider";
-import VideoFrame from "@/app/Components/macvideo";
-import VideoFrameMacOpen from "@/app/Components/videoframe";
-import Imageslider from "@/app/Components/imageslider";
-import Footer from "@/app/Components/Footer";
-import Navbar from "@/app/Components/Navbar";
+import HeroSection from "../herosection";
+import IphoneSilder from "../iphone silder";
+import Ad from "../Ads";
+import ProductSlider from "../ProductSlider";
+import VideoFrame from "../macvideo";
+import VideoFrameMacOpen from "../videoframe";
+import Imageslider from "../imageslider";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+
 
 const Home = () => {
     const containerVariants = {
@@ -61,6 +62,7 @@ const Home = () => {
                 <motion.div variants={itemVariants}><VideoFrame /></motion.div>
                 <motion.div variants={itemVariants}><VideoFrameMacOpen /></motion.div>
                 <motion.div variants={itemVariants}><Imageslider /></motion.div>
+
                 <motion.div variants={itemVariants}><Footer /></motion.div>
             </div>
         </motion.div>

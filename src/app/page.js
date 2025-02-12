@@ -1,5 +1,5 @@
-import Home from "@/app/Components/Home";
-import IntroAnimation from "@/app/Components/IntroAnimation";
+import Home from "@/app/Sections/Home";
+import IntroAnimation from "@/app/Sections/IntroAnimation";
 export default function Page() {
   return (
     <IntroAnimation>
