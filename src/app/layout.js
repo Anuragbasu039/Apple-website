@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/app/Sections/Navbar";
 import Cursor from "@/app/Sections/Cursor";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,13 +21,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
         <NavBar />
         <Cursor />
         {children}
+
       </body>
     </html>
   );

@@ -12,6 +12,8 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 
 
+
+
 const Home = () => {
     const containerVariants = {
         hidden: {
@@ -62,7 +64,6 @@ const Home = () => {
                 <motion.div variants={itemVariants}><VideoFrame /></motion.div>
                 <motion.div variants={itemVariants}><VideoFrameMacOpen /></motion.div>
                 <motion.div variants={itemVariants}><Imageslider /></motion.div>
-
                 <motion.div variants={itemVariants}><Footer /></motion.div>
             </div>
         </motion.div>

@@ -90,6 +90,7 @@ const IntroAnimation = ({ children }) => {
                     setAnimationTriggered(true);
                     requestAnimationFrame(() => {
                         window.scrollTo(0, 0);
+                        scrollValue = 0;
                     });
                 }
             }

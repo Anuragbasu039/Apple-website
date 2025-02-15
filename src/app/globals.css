@@ -4,7 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: black;
+  --foreground: #000000;
+}
+
+:root.dark {
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -15,11 +20,12 @@
 /*}*/
 
 body {
-  color: var(--background);
-  background: var(--foreground);
+  color: var(--foreground);
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   cursor: none;
   overscroll-behavior-y: contain;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 @media (hover: none) and (pointer: coarse) {
